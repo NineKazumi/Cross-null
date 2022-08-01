@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="#999">
+	<script type="text/javascript" src="JavaScript.js"></script>
+	<div><center>Крестики нолики</center></div>
+	<center>
+		<table border="0">
+		<tr>
+			<td><button id="cellGame" onclick="crossNullButton('cellGame'); this.disabled=true" class="button"></button>
+			</td>
+			<td><button id="cellGame1" onclick="crossNullButton('cellGame1');this.disabled=true" class="button"></button>
+			</td>
+			<td><button id="cellGame2" onclick="crossNullButton('cellGame2');this.disabled=true" class="button"></button>
+			</br></td>
+		</tr>
+		<tr>
+			<td><button id="cellGame3" onclick="crossNullButton('cellGame3');this.disabled=true" class="button"></button>
+			</td>
+			<td><button id="cellGame4" onclick="crossNullButton('cellGame4');this.disabled=true" class="button"></button>
+			</td>
+			<td><button id="cellGame5" onclick="crossNullButton('cellGame5');this.disabled=true" class="button"></button>
+			</br></td>
+		</tr>
+		<tr>
+			<td><button id="cellGame6" onclick="crossNullButton('cellGame6');this.disabled=true" class="button"></button>
+			</td>
+			<td><button id="cellGame7" onclick="crossNullButton('cellGame7');this.disabled=true" class="button"></button>
+			</td>
+			<td><button id="cellGame8" onclick="crossNullButton('cellGame8');this.disabled=true" class="button"></button>
+			</br></td>
+		</tr>
+	</table>
+	<button class="reset" value="Refresh Page" onClick="history.go(0);">Начать заново</button>
+	<h3 id="whoseMoveWin">Сейчас ход игрока 1</h3>
+</center>
+</body>
+</html>

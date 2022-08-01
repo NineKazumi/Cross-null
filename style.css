@@ -1,0 +1,13 @@
+.button{
+	width:60px;height:60px;
+	background-color: black;
+	color: #999;
+} 
+.button:disabled{
+	background-color: white;
+}
+
+.reset{
+	width:200px;
+	height:25px;
+}
