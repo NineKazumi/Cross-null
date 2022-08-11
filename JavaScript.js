@@ -1,8 +1,9 @@
+/*
 var whoseMotion = 0
 var cellGame = ["","","",
 				"","","",
 				"","",""]
-function crossNullMotionDrawWinClick(cell){	
+function crossNullMotionDrawWinClicka(cell){	
 	//Переменные
 	 	const playerX = ["Выйграл игрок 1(Х)","Сейчас ход игрока 2(0)","X"]
 		const player0 = ["Bыйграл игрок 2(0)","Сейчас ход игрока 1(X)","0"]
@@ -47,35 +48,27 @@ function crossNullMotionDrawWinClick(cell){
 			}
 				//ПобедаX
 				if (cellGame[0] == playerX[2] & cellGame[1] == playerX[2] & cellGame[2] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
 					window.location.href = 'win1.html'
 				}
 				if (cellGame[3] == playerX[2] & cellGame[4] == playerX[2] & cellGame[5] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
 					window.location.href = 'win1.html'
 				}
 				if (cellGame[6] == playerX[2] & cellGame[7] == playerX[2] & cellGame[8] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
 					window.location.href = 'win1.html'
 				}
 				if (cellGame[0] == playerX[2] & cellGame[3] == playerX[2] & cellGame[6] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
 					window.location.href = 'win1.html'
 				}
 				if (cellGame[1] == playerX[2] & cellGame[4] == playerX[2] & cellGame[7] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
 					window.location.href = 'win1.html'
 				}
 				if (cellGame[2] == playerX[2] & cellGame[5] == playerX[2] & cellGame[8] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
 					window.location.href = 'win1.html'
 				}
 				if (cellGame[0] == playerX[2] & cellGame[4] == playerX[2] & cellGame[8] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
 					window.location.href = 'win1.html'
 				}
 				if (cellGame[6] == playerX[2] & cellGame[4] == playerX[2] & cellGame[2] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
 					window.location.href = 'win1.html'
 				}
 		//Ход 0
@@ -116,35 +109,27 @@ function crossNullMotionDrawWinClick(cell){
 			}
 			//Победа0
 				if (cellGame[0] == player0[2] & cellGame[1] == player0[2] & cellGame[2] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
 					window.location.href = 'win2.html'
 				}
 				if (cellGame[3] == player0[2] & cellGame[4] == player0[2] & cellGame[5] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
 					window.location.href = 'win2.html'
 				}
 				if (cellGame[6] == player0[2] & cellGame[7] == player0[2] & cellGame[8] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
 					window.location.href = 'win2.html'
 				}
 				if (cellGame[0] == player0[2] & cellGame[3] == player0[2] & cellGame[6] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
 					window.location.href = 'win2.html'
 				}
 				if (cellGame[1] == player0[2] & cellGame[4] == player0[2] & cellGame[7] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
 					window.location.href = 'win2.html'
 				}
 				if (cellGame[2] == player0[2] & cellGame[5] == player0[2] & cellGame[8] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
 					window.location.href = 'win2.html'
 				}
 				if (cellGame[0] == player0[2] & cellGame[4] == player0[2] & cellGame[8] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
 					window.location.href = 'win2.html'
 				}
 				if (cellGame[6] == player0[2] & cellGame[4] == player0[2] & cellGame[2] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
 					window.location.href = 'win2.html'
 				}
 		//+ ход
@@ -153,9 +138,121 @@ function crossNullMotionDrawWinClick(cell){
 			console.log(cellGame)
 		//Hичья
 			if (whoseMotion == 9) {
-				window.location.href = 'draw.html'
+				motion.innerHTML = "Ничья"
 			}
 }
 function home(){
-	window.location = 'index.html'
+window.location = 'index.html'
+}*/
+
+var whoseMotion = 0;
+var cellGame = ["","","",
+				"","","",
+				"","",""]
+class Completion{
+	constructor(player, mPlayer, cell, win,){
+		this.player = player;
+		this.mPlayer = mPlayer;
+		this.cell = cell;
+		this.win = win;
+	}
+	move() {
+		if (this.cell == "cellGame0") {
+			cellGame[0] = this.player
+		}
+		else if (this.cell == "cellGame1") {
+			cellGame[1] = this.player
+		}
+		else if (this.cell == "cellGame2") {
+			cellGame[2] = this.player
+		}
+		else if (this.cell == "cellGame3") {
+			cellGame[3] = this.player
+		}
+		else if (this.cell == "cellGame4") {
+			cellGame[4] = this.player
+		}
+		else if (this.cell == "cellGame5") {
+			cellGame[5] = this.player
+		}
+		else if (this.cell == "cellGame6") {
+			cellGame[6] = this.player
+		}
+		else if (this.cell == "cellGame7") {
+			cellGame[7] = this.player
+		}
+		else if (this.cell == "cellGame8") {
+			cellGame[8] = this.player
+		}
+	}
+ 	winxo(){
+		if (cellGame[0] == this.player & cellGame[1] == this.player & cellGame[2] == this.player) {
+			window.location.href = this.win
+		}
+		else if (cellGame[3] == this.player & cellGame[4] == this.player & cellGame[5] == this.player) {
+			window.location.href = this.win
+		}
+		else if (cellGame[6] == this.player & cellGame[7] == this.player & cellGame[8] == this.player) {
+			window.location.href = this.win
+		}
+		else if (cellGame[0] == this.player & cellGame[3] == this.player & cellGame[6] == this.player) {
+			window.location.href = this.win
+		}
+		else if (cellGame[1] == this.player & cellGame[4] == this.player & cellGame[7] == this.player) {
+			window.location.href = this.win
+		}
+		else if (cellGame[2] == this.player & cellGame[5] == this.player & cellGame[8] == this.player) {
+			window.location.href = this.win
+		}
+		else if (cellGame[0] == this.player & cellGame[4] == this.player & cellGame[8] == this.player) {
+			window.location.href = this.win
+		}
+		else if (cellGame[6] == this.player & cellGame[4] == this.player & cellGame[2] == this.player) {
+			window.location.href = this.win
+		}
+	}
+	draw(){
+		if (whoseMotion == 9) {
+			this.downText.innerHTML = "Ничья"
+		}
+	}
+} 
+
+function crossNullMotionDrawWinClicka(cel){
+	var motion = document.getElementById("whoseMotionWin");
+	var pasteButton = document.getElementById(cel);
+
+	if (whoseMotion == 0
+	 || whoseMotion == 2
+	 || whoseMotion == 4
+	 || whoseMotion == 6
+	 || whoseMotion == 8)  {
+		var completionWhoseMotion = new Completion("x", "Сейчас ход игрока 1(Х)", cel, 'win1.html');
+		completionWhoseMotion.move();
+		completionWhoseMotion.winxo();
+		pasteButton.innerHTML = "x";
+		motion.innerHTML = "Сейчас ход игрока 2(0)";
+		whoseMotion++
+	}
+	else if (whoseMotion == 1 
+		  || whoseMotion == 3 
+		  || whoseMotion == 5
+		  || whoseMotion == 7
+		  || whoseMotion == 9)  {
+		var completionWhoseMotion = new Completion("0", "Сейчас ход игрока 2(0)", cel, 'win2.html');
+		completionWhoseMotion.move();
+		completionWhoseMotion.winxo();
+		pasteButton.innerHTML = "0";
+		motion.innerHTML = "Сейчас ход игрока 1(X)";
+		whoseMotion++
+	}
+	if (whoseMotion == 9) {
+		motion.innerHTML = "Ничья"
+	}
+
+	console.log(whoseMotion)
+	console.log(cellGame)
+}
+function home(){
+window.location = 'index.html'
 }
