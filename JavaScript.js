@@ -149,12 +149,11 @@ var whoseMotion = 0;
 var cellGame = ["","","",
 				"","","",
 				"","",""]
-class Completion{
-	constructor(player, mPlayer, cell, win,){
+class Mov{
+	constructor(player, mPlayer, cell){
 		this.player = player;
 		this.mPlayer = mPlayer;
 		this.cell = cell;
-		this.win = win;
 	}
 	move() {
 		if (this.cell == "cellGame0") {
@@ -185,7 +184,15 @@ class Completion{
 			cellGame[8] = this.player
 		}
 	}
- 	winxo(){
+} 
+
+class winiger{
+	constructor(player, win, cell){
+		this.player = player;
+		this.win = win;
+		this.cell = cell
+	}
+	winxo(){
 		if (cellGame[0] == this.player & cellGame[1] == this.player & cellGame[2] == this.player) {
 			window.location.href = this.win
 		}
@@ -211,12 +218,7 @@ class Completion{
 			window.location.href = this.win
 		}
 	}
-	draw(){
-		if (whoseMotion == 9) {
-			this.downText.innerHTML = "Ничья"
-		}
-	}
-} 
+}
 
 function crossNullMotionDrawWinClicka(cel){
 	var motion = document.getElementById("whoseMotionWin");
@@ -227,10 +229,11 @@ function crossNullMotionDrawWinClicka(cel){
 	 || whoseMotion == 4
 	 || whoseMotion == 6
 	 || whoseMotion == 8)  {
-		var completionWhoseMotion = new Completion("x", "Сейчас ход игрока 1(Х)", cel, 'win1.html');
-		completionWhoseMotion.move();
-		completionWhoseMotion.winxo();
-		pasteButton.innerHTML = "x";
+		var completionMov = new Mov("X", "Сейчас ход игрока 1(Х)", cel);
+		var completionWiniger = new winiger("X", 'win1.html', cel)
+		completionMov.move();
+		completionWiniger.winxo()
+		pasteButton.innerHTML = "X";
 		motion.innerHTML = "Сейчас ход игрока 2(0)";
 		whoseMotion++
 	}
@@ -239,9 +242,10 @@ function crossNullMotionDrawWinClicka(cel){
 		  || whoseMotion == 5
 		  || whoseMotion == 7
 		  || whoseMotion == 9)  {
-		var completionWhoseMotion = new Completion("0", "Сейчас ход игрока 2(0)", cel, 'win2.html');
-		completionWhoseMotion.move();
-		completionWhoseMotion.winxo();
+		var completionMov = new Mov("0", "Сейчас ход игрока 2(0)", cel);
+		var completionWiniger = new winiger("0", 'win2.html', cellGame)
+		completionMov.move();
+		completionWiniger.winxo()
 		pasteButton.innerHTML = "0";
 		motion.innerHTML = "Сейчас ход игрока 1(X)";
 		whoseMotion++
