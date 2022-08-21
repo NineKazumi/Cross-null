@@ -47,36 +47,20 @@ function crossNullMotionDrawWinClick(cell){
 			}
 				//ПобедаX
 				if (cellGame[0] == playerX[2] & cellGame[1] == playerX[2] & cellGame[2] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
-					window.location.href = 'win1.html'
 				}
 				if (cellGame[3] == playerX[2] & cellGame[4] == playerX[2] & cellGame[5] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
-					window.location.href = 'win1.html'
 				}
 				if (cellGame[6] == playerX[2] & cellGame[7] == playerX[2] & cellGame[8] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
-					window.location.href = 'win1.html'
 				}
 				if (cellGame[0] == playerX[2] & cellGame[3] == playerX[2] & cellGame[6] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
-					window.location.href = 'win1.html'
 				}
 				if (cellGame[1] == playerX[2] & cellGame[4] == playerX[2] & cellGame[7] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
-					window.location.href = 'win1.html'
 				}
 				if (cellGame[2] == playerX[2] & cellGame[5] == playerX[2] & cellGame[8] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
-					window.location.href = 'win1.html'
 				}
 				if (cellGame[0] == playerX[2] & cellGame[4] == playerX[2] & cellGame[8] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
-					window.location.href = 'win1.html'
 				}
 				if (cellGame[6] == playerX[2] & cellGame[4] == playerX[2] & cellGame[2] == playerX[2]) {
-					pasteButtonX0.innerHTML = playerX[1]
-					window.location.href = 'win1.html'
 				}
 		//Ход 0
 			else if (whoseMotion == 1 
@@ -116,36 +100,20 @@ function crossNullMotionDrawWinClick(cell){
 			}
 			//Победа0
 				if (cellGame[0] == player0[2] & cellGame[1] == player0[2] & cellGame[2] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
-					window.location.href = 'win2.html'
 				}
 				if (cellGame[3] == player0[2] & cellGame[4] == player0[2] & cellGame[5] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
-					window.location.href = 'win2.html'
 				}
 				if (cellGame[6] == player0[2] & cellGame[7] == player0[2] & cellGame[8] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
-					window.location.href = 'win2.html'
 				}
 				if (cellGame[0] == player0[2] & cellGame[3] == player0[2] & cellGame[6] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
-					window.location.href = 'win2.html'
 				}
 				if (cellGame[1] == player0[2] & cellGame[4] == player0[2] & cellGame[7] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
-					window.location.href = 'win2.html'
 				}
 				if (cellGame[2] == player0[2] & cellGame[5] == player0[2] & cellGame[8] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
-					window.location.href = 'win2.html'
 				}
 				if (cellGame[0] == player0[2] & cellGame[4] == player0[2] & cellGame[8] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
-					window.location.href = 'win2.html'
 				}
 				if (cellGame[6] == player0[2] & cellGame[4] == player0[2] & cellGame[2] == player0[2]) {
-					pasteButtonX0.innerHTML = player0[1]
-					window.location.href = 'win2.html'
 				}
 		//+ ход
 			whoseMotion++
