@@ -102,7 +102,11 @@ function crossNullMotionDrawWinClick(cell){
 					motion.style.display = "none"
 				}
 				if (cellGame[6] == playerX[2] & cellGame[4] == playerX[2] & cellGame[2] == playerX[2]) {
-
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
 				}
 		//Ход 0
 			else if (whoseMotion == 1 
