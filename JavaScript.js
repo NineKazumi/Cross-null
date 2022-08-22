@@ -2,6 +2,12 @@ var whoseMotion = 0
 var cellGame = ["","","",
 				"","","",
 				"","",""]
+function starting(){
+	var center = document.getElementById("cntr")
+	center.classList.remove("center")
+	var start = document.getElementById("start-button")
+	start.style.display = "none"
+}
 function crossNullMotionDrawWinClick(cell){	
 	//Переменные
 	 	const playerX = ["Выйграл игрок 1(Х)","Сейчас ход игрока 2(0)","X"]
