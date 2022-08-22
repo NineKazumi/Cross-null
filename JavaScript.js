@@ -53,6 +53,55 @@ function crossNullMotionDrawWinClick(cell){
 			}
 				//ПобедаX
 				if (cellGame[0] == playerX[2] & cellGame[1] == playerX[2] & cellGame[2] == playerX[2]) {
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+				}
+				if (cellGame[3] == playerX[2] & cellGame[4] == playerX[2] & cellGame[5] == playerX[2]) {
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+				}
+				if (cellGame[6] == playerX[2] & cellGame[7] == playerX[2] & cellGame[8] == playerX[2]) {
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+				}
+				if (cellGame[0] == playerX[2] & cellGame[3] == playerX[2] & cellGame[6] == playerX[2]) {
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+				}
+				if (cellGame[1] == playerX[2] & cellGame[4] == playerX[2] & cellGame[7] == playerX[2]) {
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+				}
+				if (cellGame[2] == playerX[2] & cellGame[5] == playerX[2] & cellGame[8] == playerX[2]) {
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+				}
+				if (cellGame[0] == playerX[2] & cellGame[4] == playerX[2] & cellGame[8] == playerX[2]) {
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+				}
+				if (cellGame[6] == playerX[2] & cellGame[4] == playerX[2] & cellGame[2] == playerX[2]) {
 				}
 				if (cellGame[3] == playerX[2] & cellGame[4] == playerX[2] & cellGame[5] == playerX[2]) {
 				}
@@ -106,6 +155,62 @@ function crossNullMotionDrawWinClick(cell){
 			}
 			//Победа0
 				if (cellGame[0] == player0[2] & cellGame[1] == player0[2] & cellGame[2] == player0[2]) {
+
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+				}
+				if (cellGame[3] == player0[2] & cellGame[4] == player0[2] & cellGame[5] == player0[2]) {
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+				}
+				if (cellGame[6] == player0[2] & cellGame[7] == player0[2] & cellGame[8] == player0[2]) {
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+				}
+				if (cellGame[0] == player0[2] & cellGame[3] == player0[2] & cellGame[6] == player0[2]) {
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+				}
+				if (cellGame[1] == player0[2] & cellGame[4] == player0[2] & cellGame[7] == player0[2]) {
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+				}
+				if (cellGame[2] == player0[2] & cellGame[5] == player0[2] & cellGame[8] == player0[2]) {
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+				}
+				if (cellGame[0] == player0[2] & cellGame[4] == player0[2] & cellGame[8] == player0[2]) {
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+				}
+				if (cellGame[6] == player0[2] & cellGame[4] == player0[2] & cellGame[2] == player0[2]) {
+					var img = document.getElementById("img")
+						img.classList.remove("img")
+					var table = document.getElementById("table")
+						table.style.display = "none"
+					motion.style.display = "none"
+
 				}
 				if (cellGame[3] == player0[2] & cellGame[4] == player0[2] & cellGame[5] == player0[2]) {
 				}
@@ -127,9 +232,10 @@ function crossNullMotionDrawWinClick(cell){
 			console.log(cellGame)
 		//Hичья
 			if (whoseMotion == 9) {
-				window.location.href = 'draw.html'
+				var draw = document.getElementById("draw")
+					draw.classList.remove("draw")
+				var table = document.getElementById("table")
+					table.style.display = "none"
+				motion.style.display = "none"
 			}
-}
-function home(){
-	window.location = 'index.html'
 }
