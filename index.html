@@ -12,9 +12,11 @@
 	<center>
 		<center><h3>Крестики нолики</h3></center>
 		<button id="start-button" class="start" onclick="starting()">Играть</button>
+		<img src="win_200X200.png" id="img" class="img">
+		<h1 class="draw" id="draw">Ничья</h1>
 	</center>
 	<center id="cntr" class="center">
-		<table border="0">
+		<table border="0" id="table" class="table">
 		<tr>
 			<td><button id="cellGame0" onclick="crossNullMotionDrawWinClick('cellGame0');this.disabled=true" class="button"></button>
 			</td>
