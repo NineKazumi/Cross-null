@@ -3,10 +3,10 @@ var cellGame = ["","","",
 				"","","",
 				"","",""]
 function starting(){
-	var center = document.getElementById("cntr")
-	center.classList.remove("center")
-	var start = document.getElementById("start-button")
-	start.style.display = "none"
+	var center = document.getElementById("center")
+		center.classList.remove("center")
+	var start = document.getElementById("start")
+		start.style.display = "none"
 }
 function crossNullMotionDrawWinClick(cell){	
 	//Переменные
@@ -23,6 +23,7 @@ function crossNullMotionDrawWinClick(cell){
 			 || whoseMotion == 8) {
 				pasteButtonX0.innerHTML = playerX[2]
 				motion.innerHTML = playerX[1]
+				
 					if (cell == "cellGame0") {
 						cellGame[0] = playerX[2]
 					}
@@ -146,57 +147,57 @@ function crossNullMotionDrawWinClick(cell){
 			}
 			//Победа0
 				if (cellGame[0] == player0[2] & cellGame[1] == player0[2] & cellGame[2] == player0[2]) {
-					var img = document.getElementById("img")
-						img.classList.remove("img")
+					var img = document.getElementById("img2")
+						img.classList.remove("img2")
 					var table = document.getElementById("table")
 						table.style.display = "none"
 					motion.style.display = "none"
 				}
 				if (cellGame[3] == player0[2] & cellGame[4] == player0[2] & cellGame[5] == player0[2]) {
-					var img = document.getElementById("img")
-						img.classList.remove("img")
+					var img = document.getElementById("img2")
+						img.classList.remove("img2")
 					var table = document.getElementById("table")
 						table.style.display = "none"
 					motion.style.display = "none"
 				}
 				if (cellGame[6] == player0[2] & cellGame[7] == player0[2] & cellGame[8] == player0[2]) {
-					var img = document.getElementById("img")
-						img.classList.remove("img")
+					var img = document.getElementById("img2")
+						img.classList.remove("img2")
 					var table = document.getElementById("table")
 						table.style.display = "none"
 					motion.style.display = "none"
 				}
 				if (cellGame[0] == player0[2] & cellGame[3] == player0[2] & cellGame[6] == player0[2]) {
-					var img = document.getElementById("img")
-						img.classList.remove("img")
+					var img = document.getElementById("img2")
+						img.classList.remove("img2")
 					var table = document.getElementById("table")
 						table.style.display = "none"
 					motion.style.display = "none"
 				}
 				if (cellGame[1] == player0[2] & cellGame[4] == player0[2] & cellGame[7] == player0[2]) {
-					var img = document.getElementById("img")
-						img.classList.remove("img")
+					var img = document.getElementById("img2")
+						img.classList.remove("img2")
 					var table = document.getElementById("table")
 						table.style.display = "none"
 					motion.style.display = "none"
 				}
 				if (cellGame[2] == player0[2] & cellGame[5] == player0[2] & cellGame[8] == player0[2]) {
-					var img = document.getElementById("img")
-						img.classList.remove("img")
+					var img = document.getElementById("img2")
+						img.classList.remove("img2")
 					var table = document.getElementById("table")
 						table.style.display = "none"
 					motion.style.display = "none"
 				}
 				if (cellGame[0] == player0[2] & cellGame[4] == player0[2] & cellGame[8] == player0[2]) {
-					var img = document.getElementById("img")
-						img.classList.remove("img")
+					var img = document.getElementById("img2")
+						img.classList.remove("img2")
 					var table = document.getElementById("table")
 						table.style.display = "none"
 					motion.style.display = "none"
 				}
 				if (cellGame[6] == player0[2] & cellGame[4] == player0[2] & cellGame[2] == player0[2]) {
-					var img = document.getElementById("img")
-						img.classList.remove("img")
+					var img = document.getElementById("img2")
+						img.classList.remove("img2")
 					var table = document.getElementById("table")
 						table.style.display = "none"
 					motion.style.display = "none"
