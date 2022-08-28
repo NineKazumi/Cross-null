@@ -14,7 +14,7 @@ function crossNullMotionDrawWinClick(cell){
 		const player0 = ["Bыйграл игрок 2(0)","Сейчас ход игрока 1(X)","0"]
 		var motion = document.getElementById("whoseMotionWin")
 		var pasteButtonX0 = document.getElementById(cell)
-	//Функция хода
+	//Функция ходьбы
 		//Ход Х
 			if (whoseMotion == 0
 			 || whoseMotion == 2
